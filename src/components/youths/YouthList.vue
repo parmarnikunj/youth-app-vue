@@ -1,27 +1,18 @@
-<script lang="ts">
-import { useYouthStore } from '@/stores/youths'
-import { defineComponent } from 'vue'
-import Youth from '@/components/youths/Youth.vue'
+<script setup lang="ts">
+import Youth from '@/components/youths/YouthComponent.vue'
+import YouthForm from '@/components/youths/YouthForm.vue'
+import { useYouthStore } from '@/components/youths/stores/youths'
+import { storeToRefs } from 'pinia'
 
-export default defineComponent({
-  name: 'sabha-list',
-  components: { Youth },
-  data() {
-    return {
-      youths: useYouthStore().youths
-    }
-  }
-})
-
+const youthStore = useYouthStore()
+const { youths } = storeToRefs(youthStore)
 </script>
 
 <template>
-
-  <ul>
+    <YouthForm/>
     <div v-for="(youth,index) in youths" :key="index">
-      <Youth :youth="youth"/>
+      <Youth :youth="youth" :index="index+1"/>
     </div>
-  </ul>
 </template>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 export default interface Sabha {
-  id: null
+  id?: string
   name: string
   topic: string
   date: string

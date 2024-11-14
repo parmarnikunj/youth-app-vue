@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { useSabhaStore } from '@/stores/sabhas'
-import { useYouthStore } from '@/stores/youths'
+import { useSabhaStore } from '@/components/sabhas/store/sabhas'
+import { useYouthStore } from '@/components/youths/stores/youths'
 useSabhaStore().fetchSabhas()
 useYouthStore().fetchYouths()
 </script>

@@ -1,5 +1,5 @@
 export default interface Youth {
-  id: null
+  id?: number
   firstName: string
   lastName: string
 }

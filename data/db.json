@@ -1,90 +1,28 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "Nirdosh",
-      "lastName": "Parmar"
-    },
-    {
-      "id": 2,
-      "firstName": "Raj",
-      "lastName": "Vaghela"
-    },
-    {
-      "id": 3,
-      "firstName": "Kirtan",
-      "lastName": "Kathrecha"
-    },
-    {
-      "id": 4,
-      "firstName": "Nishkam",
-      "lastName": "Sureliya"
-    },
-    {
-      "id": 5,
-      "firstName": "Hardik",
-      "lastName": "Gadher"
-    },
-    {
-      "id": 6,
-      "firstName": "Hardik",
-      "lastName": "Rathod"
-    },
-    {
-      "id": 7,
-      "firstName": "Rushabh",
-      "lastName": "Shah"
-    },
-    {
-      "id": 8,
+      "id": "8",
       "firstName": "Nirmann",
       "lastName": "Soni"
     },
     {
-      "id": 9,
-      "firstName": "Manav",
-      "lastName": "Ginoya"
-    },
-    {
-      "id": 10,
-      "firstName": "Nikul",
-      "lastName": "Goyani"
-    },
-    {
-      "id": 11,
-      "firstName": "Varun",
-      "lastName": "Thaker"
-    },
-    {
-      "id": 12,
+      "id": "6d5d",
       "firstName": "Jagrat",
       "lastName": "Prajapati"
     }
   ],
   "sabhas": [
     {
-      "id": 1,
-      "name": "Friday Sabha",
-      "topic": "Pushpa Gunatit Bag na",
-      "date": "15-10-2024"
+      "id": "8bde",
+      "name": "Friday sabha",
+      "topic": "gunatit push na bag",
+      "date": "14.11.2024"
     },
     {
-      "id": 2,
-      "name": "Friday Sabha",
-      "topic": "Pushpa Gunatit Bag na",
-      "date": "15-10-2024"
-    },
-    {
-      "id": 3,
-      "name": "Friday Sabha",
-      "topic": "Pushpa Gunatit Bag na",
-      "date": "15-10-2024"
-    },
-    {
-      "id": 4,
-      "name": "Friday Sabha",
-      "topic": "Pushpa Gunatit Bag na",
-      "date": "15-10-2024"
+      "id": "bfe9",
+      "name": "Thursday sabha",
+      "topic": "online sabha",
+      "date": "14.11.2024"
     }
   ]
 }
