@@ -1,16 +1,12 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import UserName from '@/components/UserName.vue'
-const first = "first"
-const last = "last"
 </script>
 
 <template>
-  <UserName
-    v-model:first-name="first"
-    v-model:last-name="last"
-  />
+  <div>
+    <UserName />
+  </div>
 </template>
 
 <style scoped>
-
 </style>

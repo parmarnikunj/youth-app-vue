@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import DelButton from '@/components/DelButton.vue'
 import { useSabhaStore } from '@/components/sabhas/store/sabhas'
 import type Sabha from '@/components/sabhas/types/Sabha'
@@ -14,8 +14,13 @@ const handleDelete = (id?: string) => {
 </script>
 
 <template>
-  <div>
-   Name: {{sabha.name}} - Topic: {{ sabha.topic }}
+  <div class="sabha-item">
+   Name: {{sabha.name}}
+  </div>
+  <div class="sabha-item">
+    Topic: {{ sabha.topic }}
+  </div>
+  <div class="sabha-item">
     <DelButton @delete="handleDelete(sabha.id)"/>
   </div>
 </template>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { useSabhaStore } from '@/components/sabhas/store/sabhas'
 import { useYouthStore } from '@/components/youths/stores/youths'
@@ -8,17 +8,19 @@ useYouthStore().fetchYouths()
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/youths">Youths</RouterLink>
-        <RouterLink to="/sabhas">Sabhas</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+    <div>
+      <nav class="nav-list">
+        <RouterLink class="nav-item" to="/">Home</RouterLink>
+        <RouterLink class="nav-item" to="/youths">Youths</RouterLink>
+        <RouterLink class="nav-item" to="/sabhas">Sabhas</RouterLink>
+        <RouterLink class="nav-item" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
+  <body class="container">
+    <RouterView/>
+  </body>
 
-  <RouterView />
 </template>
 
 <style scoped>

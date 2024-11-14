@@ -1,4 +1,18 @@
-<script setup lang="ts">
+<template>
+  <div>
+    <div class="youth-item">
+    {{youth.firstName}}
+    </div>
+    <div class="youth-item">
+      {{youth.lastName}}
+    </div>
+    <div class="youth-item">
+      <DelButton @delete="handleDelete(youth.id)"/>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
 import type Youth from '@/components/youths/types/Youth'
 import { useYouthStore } from '@/components/youths/stores/youths'
 import DelButton from '@/components/DelButton.vue'
@@ -13,14 +27,5 @@ const handleDelete = (id?:number) => {
 }
 </script>
 
-<template>
-  <div>
-    {{index}}. {{youth.firstName}}-{{youth.lastName}}
-    <DelButton @delete="handleDelete(youth.id)"/>
-  </div>
-
-</template>
-
 <style scoped>
-
 </style>

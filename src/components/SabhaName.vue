@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useYouthStore } from '@/components/youths/stores/youths'
 import type Sabha from '@/components/sabhas/types/Sabha'
 import { useSabhaStore } from '@/components/sabhas/store/sabhas'
@@ -15,12 +15,11 @@ const submit = () => {
 </script>
 
 <template>
-  <input type="text" v-model="name">
-  <input type="text" v-model="topic">
-  <input type="text" v-model="date">
-  <button @click="submit">Add</button>
+  <input v-model="name" class="sabha-item" type="text">
+  <input v-model="topic" class="sabha-item" type="text">
+  <input v-model="date" class="sabha-item" type="text">
+  <button class="sabha-item add-button" @click="submit">Add</button>
 </template>
 
 <style scoped>
-
 </style>

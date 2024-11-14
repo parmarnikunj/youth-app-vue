@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useSabhaStore } from '@/components/sabhas/store/sabhas'
 import Sabha from '@/components/sabhas/SabhaComponent.vue'
 import { storeToRefs } from 'pinia'
@@ -8,12 +8,14 @@ const { sabhas } = storeToRefs(sabhaStore)
 </script>
 
 <template>
-  <SabhaName/>
-  <ul>
-    <div v-for="(sabha,index) in sabhas" :key="index">
+  <div class="sabha-list">
+    <div class="sabha-list-item">
+      <SabhaName/>
+    </div>
+    <div v-for="(sabha,index) in sabhas" :key="index" class="sabha-list-item">
       <Sabha :sabha="sabha"/>
     </div>
-  </ul>
+  </div>
 </template>
 
 <style scoped></style>

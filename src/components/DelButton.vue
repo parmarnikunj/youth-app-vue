@@ -1,11 +1,10 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const emit = defineEmits(['delete'])
 </script>
 
 <template>
-<button @click="emit('delete')">del</button>
+<button  class="del-button" @click="emit('delete')">delete</button>
 </template>
 
 <style scoped>
-
 </style>

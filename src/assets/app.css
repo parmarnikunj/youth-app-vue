@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.youth-list {
+    display: flex;
+    flex-direction: column;
+}
+.youth-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.youth-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-style: solid;
+    border-color: coral;
+}
+.youth-item {
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+.sabha-list{
+    display: flex;
+    flex-direction: column;
+}
+.sabha-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.sabha-item {
+    padding: 5px;
+    margin: 5px;
+}
+.item {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-item {
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 50px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.add-button{
+    background: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    border-color: aqua;
+}
+.del-button {
+    border-radius: 7px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-color: coral;
+}
