@@ -15,8 +15,8 @@ useYouthStore().fetchYouths()
         <RouterLink class="nav-item" to="/about">About</RouterLink>
       </div>
       <RouterView/>
-     
-  </div> 
+
+  </div>
 </template>
 
 <style scoped>

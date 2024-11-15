@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import Youths from '../components/youths/YouthList.vue'
+import YouthForm from '@/components/youths/YouthForm.vue'
 </script>
 
 <template>
   <div class="container-item">
-    <Youths/>
+    <YouthForm/>
   </div>
 
 </template>

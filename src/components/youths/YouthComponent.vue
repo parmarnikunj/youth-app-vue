@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="youth-item">
-    {{youth.firstName}}
+    {{youth.name.first}}
     </div>
     <div class="youth-item">
-      {{youth.lastName}}
+      {{youth.name.last}}
     </div>
     <div class="youth-item">
       <DelButton @delete="handleDelete(youth.id)"/>

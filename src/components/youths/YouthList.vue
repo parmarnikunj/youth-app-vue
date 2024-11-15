@@ -9,13 +9,15 @@ const { youths } = storeToRefs(youthStore)
 </script>
 
 <template>
-  <div class="youth-form">
-    <YouthForm/>
-  </div>
-   
-  <div class="youth-list" v-if="youths.length>0">   
-    <div v-for="(youth,index) in youths" :key="index">
-      <Youth :index="index+1" :youth="youth" class="youth-list-item"/>
+  <div class="youth-list">
+    <router-link
+      class="add-button"
+      to="/addYouth">Add
+    </router-link>
+    <div v-if="youths.length>0">
+      <div v-for="(youth,index) in youths" :key="index">
+        <Youth :index="index+1" :youth="youth" class="youth-list-item"/>
+      </div>
     </div>
   </div>
 </template>

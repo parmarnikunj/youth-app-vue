@@ -1,16 +1,5 @@
 {
-  "users": [
-    {
-      "id": "6d5d",
-      "firstName": "Jagrat",
-      "lastName": "Prajapati"
-    },
-    {
-      "id": "941c",
-      "firstName": "Parmarth",
-      "lastName": "Patel"
-    }
-  ],
+  "users": [],
   "sabhas": [
     {
       "id": "8bde",
