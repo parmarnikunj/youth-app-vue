@@ -1,15 +1,19 @@
 <template>
-  <div>
-    <div class="youth-item">
-    {{youth.name.first}}
+    <div class="youth-item bold">
+    {{youth.name.first}} {{youth.name.last}}
     </div>
     <div class="youth-item">
-      {{youth.name.last}}
+      {{youth.phone.mobile}}
+    </div>
+    <div class="youth-item">
+      {{youth.address.city.name}}
+    </div>
+  <div class="youth-item">
+      {{youth.address.country.name}}
     </div>
     <div class="youth-item">
       <DelButton @delete="handleDelete(youth.id)"/>
     </div>
-  </div>
 </template>
 
 <script lang="ts" setup>
@@ -28,4 +32,7 @@ const handleDelete = (id?:number) => {
 </script>
 
 <style scoped>
+.bold {
+  font-weight: bold;
+}
 </style>

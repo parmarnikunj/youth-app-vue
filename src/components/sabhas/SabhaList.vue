@@ -2,7 +2,7 @@
 import { useSabhaStore } from '@/components/sabhas/store/sabhas'
 import Sabha from '@/components/sabhas/SabhaComponent.vue'
 import { storeToRefs } from 'pinia'
-import SabhaName from '@/components/SabhaName.vue'
+import SabhaName from '@/components/sabhas/SabhaNameInput.vue'
 const sabhaStore = useSabhaStore()
 const { sabhas } = storeToRefs(sabhaStore)
 </script>
@@ -12,9 +12,7 @@ const { sabhas } = storeToRefs(sabhaStore)
     <SabhaName/>
   </div>
   <div class="sabha-list">
-    <div class="sabha-list-item">      
-    </div>
-    <div v-for="(sabha,index) in sabhas" :key="index" class="sabha-list-item">
+    <div v-for="(sabha,index) in sabhas" :key="index" class="sabha-card">
       <Sabha :sabha="sabha"/>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { defineModel } from 'vue'
-import City from '@/components/youths/City.vue'
-import Country from '@/components/youths/Country.vue'
+import City from '@/components/youths/CityInput.vue'
+import Country from '@/components/youths/CountryInput.vue'
 
 const street = defineModel('street')
 const houseNumber = defineModel('houseNumber')

@@ -11,12 +11,6 @@
     border-color: #f8f8f8;
     border-style: solid;
 }
-.youth-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
 .youth-form {
     display: flex;
     flex-direction: column;
@@ -37,14 +31,30 @@
     flex-wrap: wrap;
     flex-grow: 1;
 }
-
-.youth-item {
-    margin: 5px;
-    padding: 5px;
-    font-weight: bold;
-    justify-content: space-evenly;
-    flex-grow: 1;
+.youth-list {
+    display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 10px;
+}
+.youth-add-button {
+    margin: 10px;
+    padding: 5px;
+}
+.youth-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-color: aqua;
+    background-color: #f2f2f2;
+}
+.youth-item {
+    margin: 2px;
+    padding: 1px;
 }
 .youth-list-item {
     display: flex;
@@ -62,12 +72,29 @@
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    justify-content: space-between;
+    border-color: #f2f2f2;
+    border-style: solid;
+    margin: 20px;
+    padding: 5px;
 }
 .sabha-list{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-wrap: 1;
+    gap: 10px;
+}
+.sabha-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-color: coral;
+    background-color: #f2f2f2;
 }
 .sabha-list-item {
     display: flex;
@@ -76,9 +103,8 @@
     flex-grow: 1;
 }
 .sabha-item {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
 }
 
 .nav-list {
@@ -97,8 +123,9 @@
 }
 
 .add-button {
-    margin: 5px;
-    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
     background: green;
     color: white;
     font-weight: bold;

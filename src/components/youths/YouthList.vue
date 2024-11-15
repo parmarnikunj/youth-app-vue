@@ -9,17 +9,17 @@ const { youths } = storeToRefs(youthStore)
 </script>
 
 <template>
-  <div class="youth-list">
+  <div class="youth-add-button">
     <router-link
       class="add-button"
-      to="/addYouth">Add
+      to="/addYouth">ADD
     </router-link>
-    <div v-if="youths.length>0">
-      <div v-for="(youth,index) in youths" :key="index">
-        <Youth :index="index+1" :youth="youth" class="youth-list-item"/>
+    </div>
+    <div v-if="youths.length>0" class="youth-list">
+      <div v-for="(youth,index) in youths" :key="index" class="youth-card">
+        <Youth :index="index+1" :youth="youth"/>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>

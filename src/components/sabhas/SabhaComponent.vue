@@ -14,11 +14,14 @@ const handleDelete = (id?: string) => {
 </script>
 
 <template>
-  <div class="sabha-item">
-   Name: {{sabha.name}}
+  <div class="sabha-item bold">
+   {{sabha.name}}
   </div>
   <div class="sabha-item">
-    Topic: {{ sabha.topic }}
+    {{ sabha.topic }}
+  </div>
+  <div class="sabha-item">
+    {{ sabha.date }}
   </div>
   <div class="sabha-item">
     <DelButton @delete="handleDelete(sabha.id)"/>
@@ -26,5 +29,8 @@ const handleDelete = (id?: string) => {
 </template>
 
 <style scoped>
+.bold {
+  font-weight: bold;
+}
 
 </style>
