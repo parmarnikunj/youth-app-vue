@@ -1,5 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>Welcome to Youtsh-App!</h1>
+  <div class="container-item">
+    <h1>Welcome to Youtsh-App!</h1>
+  </div>
+  
 </template>

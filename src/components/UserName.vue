@@ -11,19 +11,17 @@ const submit = () => {
 }
 </script>
 <template>
-  <div>
-    <div>
-      <label>First Name</label>
+    <div class="youth-form-item">
+      <label class="youth-item">First Name</label>
       <input v-model="firstName" class="youth-item" type="text">
     </div>
-    <div>
-      <label>Last Name</label>
+    <div class="youth-form-item">
+      <label class="youth-item">Last Name</label>
       <input v-model="lastName" class="youth-item" type="text">
     </div>
-    <div>
+    <div class="youth-form-item">
       <button class="youth-item add-button" @click="submit">Add</button>
     </div>
-  </div>
 </template>
 
 <style scoped>

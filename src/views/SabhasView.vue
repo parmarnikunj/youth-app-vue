@@ -3,7 +3,10 @@ import Sabhas from '../components/sabhas/SabhaList.vue'
 </script>
 
 <template>
-  <Sabhas />
+  <div class="container-item">
+    <Sabhas />
+  </div>
+  
 </template>
 
 <style scoped></style>

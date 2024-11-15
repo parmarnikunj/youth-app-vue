@@ -15,9 +15,18 @@ const submit = () => {
 </script>
 
 <template>
-  <input v-model="name" class="sabha-item" type="text">
-  <input v-model="topic" class="sabha-item" type="text">
-  <input v-model="date" class="sabha-item" type="text">
+  <div class="sabha-item">
+    <label>Name:</label>
+    <input v-model="name"  type="text">
+  </div>
+  <div class="sabha-item">
+    <label>Topic:</label>
+    <input v-model="topic"  type="text">
+  </div>
+  <div class="sabha-item">
+    <label>Date:</label>
+    <input v-model="date" type="text">
+  </div>  
   <button class="sabha-item add-button" @click="submit">Add</button>
 </template>
 

@@ -1,21 +1,25 @@
-.container {
+.app-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+}
+.container-item {
+    display: flex;
+    justify-content: space-evenly;
 }
 .youth-list {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 .youth-form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
+    flex-grow: 1;
+}
+.youth-form-item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
 .youth-list-item {
     display: flex;
@@ -32,34 +36,37 @@
     margin: 5px;
     padding: 5px;
     font-weight: bold;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.sabha-form {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
 .sabha-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: 1;
 }
 .sabha-list-item {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 .sabha-item {
-    padding: 5px;
-    margin: 5px;
-}
-.item {
     display: flex;
-    padding: 10px;
-    margin: 10px;
-    justify-content: flex-start;
-    font-weight: bold;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
+
 .nav-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 .nav-item {
     padding: 10px;

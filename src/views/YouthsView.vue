@@ -3,7 +3,10 @@ import Youths from '../components/youths/YouthList.vue'
 </script>
 
 <template>
-  <Youths/>
+  <div class="container-item">
+    <Youths/>
+  </div>
+  
 </template>
 
 <style scoped></style>

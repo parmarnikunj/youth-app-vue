@@ -8,9 +8,11 @@ const { sabhas } = storeToRefs(sabhaStore)
 </script>
 
 <template>
+  <div class="sabha-form">
+    <SabhaName/>
+  </div>
   <div class="sabha-list">
-    <div class="sabha-list-item">
-      <SabhaName/>
+    <div class="sabha-list-item">      
     </div>
     <div v-for="(sabha,index) in sabhas" :key="index" class="sabha-list-item">
       <Sabha :sabha="sabha"/>
